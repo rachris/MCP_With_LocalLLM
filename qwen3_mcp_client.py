@@ -31,8 +31,10 @@ async def main():
 
     # Run the query
     result = await agent.run(
-        "Get me details from the kimaxpolytron.com",
+        "Get me details from the website https://clay-works.com/",
     )
+
+    results1= agent.run()
     print(f"\nResult: {result}")
 
 if __name__ == "__main__":
