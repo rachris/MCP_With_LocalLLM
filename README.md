@@ -7,7 +7,7 @@ Regarding the combination (LLM+MCP), we can use the reasoning capability of an L
 
 We propose here to build a rather simple setup: 
 
-The setup is rather simple: we will ask the LLM to make a summary content of a given website but within the setup of the MCP protocol. That will require defining a MCP-Server and a MCP-Client. In short, the user is making a request to the MCP-Client, which will submit this request to the LLM. The MCP-Server have already provided a list of tools available to the LLM and depending on the request of the user, the LLM will decide if he can answer using its own reasoning or if it requires a call to one of the tools the MCP-Server has available.
+The setup is rather simple: we will ask the LLM to make a summary content of a given website but within the setup of the MCP protocol. That will require defining a MCP-Server and a MCP-Client. In short, the user is making a request to the MCP-Client, which will submit this request to the LLM. The MCP-Server has already provided a list of tools available to the LLM and depending on the request of the user, the LLM will decide if he can answer using its own reasoning or if it requires a call to one of the tools the MCP-Server has available. Because the tools are deterministic, the information the LLM has been given by the MPC-Server about the tools should help him make a call to the tools with the correct arguments.
 
 
 # Quick introduction to MCP
