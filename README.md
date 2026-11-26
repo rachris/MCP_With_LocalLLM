@@ -13,6 +13,9 @@ The setup is rather simple: we will ask the LLM to make a summary content of a g
 # Quick introduction to MCP
 
 
+-----To be completed later-----
+
+
 
 
 # Pre-requisite
@@ -25,5 +28,19 @@ sudo apt install curl
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
+-Create your Python virtual environement (in VSCode in my case)
+
+-Then make to  following package installation
+```
+pip install mcp[cli] requests python-dotenv langchain-ollama fastmcp
+pip install requests
+pip install logging
+```
+
+-Running first qwen3_mcp_server.py and then qwen_mcp_client.py should give you the below:
+
+
+
+<img width="1151" height="412" alt="image" src="https://github.com/user-attachments/assets/be1a8c5e-2210-4495-b3c7-b4cafa4072de" />
 
 -
