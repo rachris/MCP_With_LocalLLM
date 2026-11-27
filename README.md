@@ -1,21 +1,13 @@
 # Introduction
 
 I am rather new in the field of the LLM's and learning about the Model Context Protocol looked an interesting topic to start with. 
-And that fitted well with my Open Source aspiration and I have always kept an eye on Open Source Community and took part of Open Source events for the past 20 years. So combining this MCP protocol, although a protocol developped by Anthropic but shared to the Community as Open Source framework with an open weights LLM looked 
-an interesting project. Also, from an enterprise point of view, the use of open weights LLM's would be quite interesting as it can be installed on premise and it keeps control of its data and not subject to token pricing by OpenAI or Anthropic when using Frontier models. 
-Regarding the combination (LLM+MCP), we can use the reasoning capability of an LLM to access and analyse Enterprise data by connecting both through he MCP protocol.
+And that fitted well with my long lasting Open Source orientation and I have always kept an eye on Open Source Community and took part on a regular basis to Open Source events for the past 20 years. So combining this MCP protocol, although a protocol developped by Anthropic but shared as Open Source, with an open weights LLM looked 
+an interesting project to grasp a better understanding of the detailed mechanisms behind. Also, from an enterprise point of view, the use of open weights LLM's would be quite interesting as it can be installed on premise and the enterprise keeps control of its data and not subject to token pricing by OpenAI or Anthropic or else when creating those AI Agents. 
+Regarding the combination (LLM+MCP), we can use the reasoning capability of an LLM to access and analyse Enterprise data by connecting both through the MCP protocol.
 
 We propose here to build a rather simple setup: 
 
 The setup is rather simple: we will ask the LLM to make a summary content of a given website but within the setup of the MCP protocol. That will require defining a MCP-Server and a MCP-Client. In short, the user is making a request to the MCP-Client, which will submit this request to the LLM. The MCP-Server has already provided a list of tools available to the LLM and depending on the request of the user, the LLM will decide if he can answer using its own reasoning or if it requires a call to one of the tools the MCP-Server has available. Because the tools are deterministic, the information the LLM has been given by the MPC-Server about the tools should help him make a call to the tools with the correct arguments.
-
-
-# Quick introduction to MCP
-
-
------To be completed later-----
-
-
 
 
 # Pre-requisite
@@ -40,7 +32,5 @@ pip install logging
 -Running first qwen3_mcp_server.py and then qwen_mcp_client.py should give you the below:
 
 
-
 <img width="1151" height="412" alt="image" src="https://github.com/user-attachments/assets/be1a8c5e-2210-4495-b3c7-b4cafa4072de" />
 
--
