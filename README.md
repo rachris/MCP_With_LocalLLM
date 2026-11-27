@@ -10,7 +10,7 @@ We propose here to build a rather simple setup:
 The setup is rather simple: we will ask the LLM to make a summary content of a given website but within the setup of the MCP protocol. That will require defining a MCP-Server and a MCP-Client. In short, the user is making a request to the MCP-Client, which will submit this request to the LLM. The MCP-Server has already provided a list of tools available to the LLM and depending on the request of the user, the LLM will decide if he can answer using its own reasoning or if it requires a call to one of the tools the MCP-Server has available. Because the tools are deterministic, the information the LLM has been given by the MPC-Server about the tools should help him make a call to the tools with the correct arguments.
 
 
-# Pre-requisite
+# Pre-requisite and outcome
 
 -I installed an Alibaba Qwen's LLM which could fit on my HP laptop with 8Gb NVIDIA VRAM running on Ubuntu 26.01. In consequence I installed Qwen2.5-Coder-7B which has 7.61 billion parameters (6.53B non-embedding), taking up around 4.7 GB to 5.5 GB when 4-bit quantized (Q4_K_M). As such, this model could fit entirely in the VRAM of my machine with no need to add some swap space.
 
